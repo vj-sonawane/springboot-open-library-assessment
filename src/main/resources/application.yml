@@ -1,0 +1,37 @@
+#Port
+server:
+  port: '9091'
+
+#DMDS
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/open-library
+    username: root
+    password: root
+
+  #LSFB
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+  #Devtool
+  devtools:
+    restart:
+      enabled: 'true'
+
+  #EnableColouredLogging
+  output:
+    ansi:
+      enabled: always
+
+  #App_Name
+  application:
+    name: OpenLibrary
+
+
+GET_API: https://openlibrary.org/isbn/
