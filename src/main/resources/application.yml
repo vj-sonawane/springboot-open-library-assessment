@@ -33,5 +33,5 @@ spring:
   application:
     name: OpenLibrary
 
-
+#open_library_api
 GET_API: https://openlibrary.org/isbn/
