@@ -35,3 +35,16 @@ spring:
 
 #open_library_api
 GET_API: https://openlibrary.org/isbn/
+
+#open_library_base_URL
+Base_URL: https://openlibrary.org
+
+#ErrorMessage
+ErrorMsg: Exception while getting book information
+
+#Logging
+logging:
+  level:
+    com:
+      scalex:
+        openlibrary: DEBUG

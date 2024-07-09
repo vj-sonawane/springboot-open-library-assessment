@@ -56,15 +56,15 @@
 					}
 				},
 				"url": {
-					"raw": "https://openlibrary.org/isbn/0385472579.json",
+					"raw": "https://openlibrary.org/authors/OL223368A",
 					"protocol": "https",
 					"host": [
 						"openlibrary",
 						"org"
 					],
 					"path": [
-						"isbn",
-						"0385472579.json"
+						"authors",
+						"OL223368A"
 					]
 				}
 			},
