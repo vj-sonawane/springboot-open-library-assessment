@@ -37,7 +37,7 @@ public class BookDetailsController {
             BookDetailsResponse info = bookDetailsService.getBooksInfoByISBN(bookDetailsRequest);
             return new ResponseEntity<>(info, HttpStatus.OK);
         } catch (JsonProcessingException | InvalidISBNException ex) {
-            log.error("Exception while getting book information: "+ex.getMessage());
+            log.error("Exception while getting book information: {}",ex.getMessage());
             ErrorResponse errorResponse = ErrorResponse.builder()
                     .message(errorMsg)
                     .details(ex.getMessage())
